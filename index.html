@@ -105,8 +105,8 @@
             }
         }
 
-        window.addEventListener("keypress",(event)=> {
-            if (event.key == " ") {
+        window.addEventListener("keydown",(event)=> {
+            if (event.keyCode == 32 || event.keyCode == 39) {
                 nextSlide();
             }
         })
